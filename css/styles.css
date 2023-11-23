@@ -49,7 +49,7 @@ nav {
   width: 20%;
   height: 300px;
   */
-  background: gray; 
+  background: gray;
   padding: 10px;
 }
 
@@ -91,8 +91,10 @@ article {
   /*  width: 2000px;*/
   padding: 20px;
   background-color: gainsboro;
-  display: table-cell;
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 /* H section {
@@ -121,7 +123,7 @@ div.grupos {
   margin: 12px;
   border: 1px solid black;
   float: left;
-  width: 323px;
+  width: 355px;
 }
 
 
@@ -147,7 +149,12 @@ div.atras {
 
 }
 
+form {
 
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*.inicio {
   font-size: 19px;
@@ -160,9 +167,7 @@ div.atras {
 
 .texto1 {
   width: 100%;
-  text-align:
-  ￼1 ￼2 ￼3 ￼4 ￼5
-   center;
+  text-align: center;
   color: black;
   background-color: darkgray;
   padding: 20px;
@@ -224,19 +229,15 @@ div.atras {
 }
 
 .columna {
-  width: 100%;
-  padding: 1px;
-  margin: 0px;
+  width: 32%;
+  padding: 1vw;
 }
 
 .columna img {
-  width: 90%;
+  width: 100%;
 }
 
-img {
-  width: 20rem;
-  height: 14rem;
-}
+
 
 @media (max-width: 600px) {
 
@@ -245,4 +246,28 @@ img {
     width: 100%;
     height: auto;
   }
+
+  h2 {
+    color: wheat;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+
+  .fila {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .columna {
+    width: 100%;
+    padding: 10px;
+  }
+
 }
