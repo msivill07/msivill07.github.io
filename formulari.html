@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <title>ᴛʜᴇ ᴡᴀʟᴋɪɴɢ ᴅᴇᴀᴅ</title>
+</head>
+
+<body>
+    <header>
+        <h2>ᴛʜᴇ ᴡᴀʟᴋɪɴɢ ᴅᴇᴀᴅ</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Inicio</b></a></li>
+                <li><a href="personajes.html"><b>Personajes</b></a></li>
+                <li><a href="comunidades.html"><b>Comunidades</b></a></li>
+                <li><a href="grupos.html"><b>Grupos</b></a></li>
+                <li><a href="temporadas.html"><b>Temporadas</b></a></li>
+                <li><a class="active" href="formulari.html"><b>Formulario</b></a></li>
+            </ul>
+        </nav>
+        <article>
+            <br>
+            <form action="gracies.html" method="get" name="Formulario">
+                <fieldset>
+                    <legend><b>¿Te gustó la serie?</b></legend>
+                    <p>1 Nada y 5 Mucho</p><br>
+                    <input type="radio" name="puntuacion" id="puntuacion1" value="1" checked>1
+                    <input type="radio" name="puntuacion" id="puntuacion2" value="2">2
+                    <input type="radio" name="puntuacion" id="puntuacion3" value="3">3
+                    <input type="radio" name="puntuacion" id="puntuacion4" value="4">4
+                    <input type="radio" name="puntuacion" id="puntuacion5" value="5">5<br><br><br>
+                    <label for="personaje">¿Cuál es tu personaje favorito?</label><br><br>
+                    <input type="text" id="personaje" name="personaje" placeholder="Personaje favorito"><br><br>
+                    <label for="comunidad">¿Tu comunidad favorita?</label><br>
+                    <select id="comunidad">
+                        <option value="alexandría">Alexandría</option>
+                        <option value="santuario">Santuario</option>
+                        <option value="mancomunidad">Mancomunidad</option>
+                        <option value="terminus">Terminus</option>
+                        <option value="oceanside">Oceanside</option>
+                    </select><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend></legend>
+                    <button type="submit" id="submit">Enviar formulari</button>
+                    <button type="reset" id="reset">Esborrar formulari</button>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <p>Marti Sivill</p>
+    </footer>
+</body>
+
+</html>
