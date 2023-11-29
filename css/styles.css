@@ -91,10 +91,6 @@ article {
   /*  width: 2000px;*/
   padding: 20px;
   background-color: gainsboro;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
 }
 
 /* H section {
@@ -123,7 +119,7 @@ div.grupos {
   margin: 12px;
   border: 1px solid black;
   float: left;
-  width: 355px;
+  width: 323px;
 }
 
 
@@ -131,12 +127,14 @@ div.grupos {
 div.gallery img {
   width: 100%;
   height: auto;
+
 }
 
 
 div.desc {
   padding: 15px;
   text-align: center;
+  
 }
 
 div.atras {
@@ -148,6 +146,7 @@ div.atras {
   background-color: gray;
 
 }
+
 
 form {
 
@@ -167,7 +166,7 @@ form {
 
 .texto1 {
   width: 100%;
-  text-align: center;
+  text-align:center;
   color: black;
   background-color: darkgray;
   padding: 20px;
@@ -229,45 +228,106 @@ form {
 }
 
 .columna {
-  width: 32%;
-  padding: 1vw;
+  width: 100%;
+  padding: 1px;
+  margin: 0px;
 }
 
 .columna img {
-  width: 100%;
+  width: 90%;
 }
 
+img {
+  width: 20rem;
+  height: 14rem;
+}
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.dentro {
+  padding: 20px;
+  background-color: gainsboro;
+ 
+}
 
 @media (max-width: 600px) {
 
-  nav,
-  article {
-    width: 100%;
-    height: auto;
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+
   }
 
   h2 {
     color: wheat;
   }
 
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+  td {
+    padding: 1px;
   }
 
+  
+  .temp {
+    max-width: 100%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
 
   .fila {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .columna {
-    width: 100%;
-    padding: 10px;
+    width: 80%;
   }
 
+  .columna_img {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .columna_img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .caja1 {
+    margin-bottom: 15px;
+    margin: 12px;
+    float: left;
+    width: 250px;
+  }
+
+  .desc img {
+    width: 100%;
+    max-height: 400px;
+  }
+
+  div.grupos {
+    margin: 20%;
+  }
+ 
+  .dentro {
+    padding: 20px;
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+.atras {
+  height: 50px;
+}
 }
